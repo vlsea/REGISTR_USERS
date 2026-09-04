@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body class="body">
+    <!-- <div class="moon"></div> -->
+    <!-- <input type="text" id="insert" />
+    <button>чпокчпок</button>
+    <li id="li1">10</li>
+    <li id="li2">20</li>
+    <li id="li3">30</li>
+    <li id="li4">40</li>
+    <p></p> -->
+    <!-- <input type="text" id="insert_2" />
+    <p></p>
+    <button>чпокай_Сюда</button> -->
+
+    <header class="header"></header>
+    <div class="info"></div>
+
+    <form class="form">
+      <h2 class="form__title">Регистрация</h2>
+      <div class="form__block">
+        <div class="form__block-item">
+          <label for="first-name"><strong>Имя:</strong></label>
+          <input type="text" id="first-name" />
+        </div>
+
+        <div class="form__block-item">
+          <label for="last-name"><strong>Фамилия:</strong></label>
+          <input type="text" id="last-name" />
+        </div>
+
+        <div class="form__block-item">
+          <label for="login"><strong>Логин:</strong></label>
+          <input type="text" id="login" />
+        </div>
+
+        <div class="form__block-item">
+          <label for="password"><strong>Пароль:</strong></label>
+          <input type="password" id="password" />
+        </div>
+      </div>
+
+      <fieldset class="form__fieldset">
+        <legend class="form__fieldset-legend">Ваш пол:</legend>
+        <label for="male">
+          <input type="radio" id="male" name="gender" value="1" />
+          <span>М</span>
+        </label>
+        <label for="female">
+          <input type="radio" id="female" name="gender" value="2" />
+          <span>Ж</span>
+        </label>
+      </fieldset>
+
+      <fieldset class="form__fieldset">
+        <legend class="form__fieldset-legend">Ваш статус:</legend>
+        <label for="rate-standart">
+          <input type="radio" id="rate-standart" name="rate" value="1" />
+          <span>Стандарт</span>
+        </label>
+        <label for="rate-premium">
+          <input type="radio" id="rate-premium" name="rate" value="2" checked />
+          <span>Премиум</span>
+        </label>
+        <label for="rate-vip">
+          <input type="radio" id="rate-vip" name="rate" value="3" />
+          <span>VIP</span>
+        </label>
+      </fieldset>
+      <button type="submit" class="btn">Зарегистрироваться</button>
+    </form>
+
+    <section class="users">
+      <h2>Все пользователи:</h2>
+      <div class="users__block">
+        <ul class="users__block__list"></ul>
+      </div>
+    </section>
+    <!-- <ul>
+      <li id="num1">12</li>
+      <li id="num2">7</li>
+      <li id="num3">25</li>
+      <li id="num4">3</li>
+    </ul>
+    <input type="text" />
+    <button>Найдем среднее мафака</button> -->
+
+    <script src="./DB.js" type="module"></script>
+  </body>
+</html>
