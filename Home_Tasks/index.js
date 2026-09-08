@@ -2962,3 +2962,95 @@
 //   globalArray.push(item.textContent);
 // });
 // console.log(globalArray);
+// document.querySelector(`button`).addEventListener(`click`, (event) => {
+//   event.preventDefault();
+//   let allLi = document.querySelectorAll(`li`);
+//   allLi.forEach((item) => {
+//     let num = Array(item.textContent);
+//     num.reduce(
+//       (max, num) =>
+//         Number(num.textContent) > Number(max.textContent) ? num : max,
+//       num.remove(),
+//     );
+//   });
+// });
+
+// document.querySelector(`button`).addEventListener(`click`, (event) => {
+//   event.preventDefault();
+//   const itemsLi = [...document.querySelectorAll(`li`)];
+//   const maxItem = itemsLi.reduce((max, min) =>
+//     Number(max.textContent) > Number(min.textContent) ? max : min,
+//   );
+//   maxItem.remove();
+// });
+
+// document.addEventListener(`click`, () => {
+//   const items = [...document.querySelectorAll(`li`)];
+//   const maxItem = items.reduce((max, li) => {
+//     if (Number(li.textContent) > Number(max.textContent)) {
+//       return li;
+//     } else {
+//       return max;
+//     }
+//   });
+//   maxItem.remove();
+// });
+
+// const array = [5, 2, 9, 1, 6];
+// const minNumbers = function () {
+//   let item = Infinity;
+//   array.forEach((num) => {
+//     if (item > num) {
+//       item = num;
+//     }
+//   });
+//   return item;
+// };
+// console.log(minNumbers());
+
+// const data = [
+//   {
+//     text: "111",
+//     href: "1.html",
+//   },
+//   {
+//     text: "222",
+//     href: "2.html",
+//   },
+//   {
+//     text: "333",
+//     href: "3.html",
+//   },
+// ];
+
+// data.forEach((item) => {
+//   const a = document.createElement(`a`);
+//   a.textContent = item.text;
+//   a.href = item.href;
+//   document.body.appendChild(a);
+// });
+
+// document.body.innerHTML = data
+//   .map((item) => `<a href=${item.href}>${item.text}</a>`)
+//   .join(" ");
+
+// document.body.appendChild(newElements);
+
+// const data = {
+//   user: {
+//     profile: {
+//       items: [
+//         { id: 1, name: "первый" },
+//         { id: 2, name: "второй" },
+//       ],
+//     },
+//   },
+// };
+// document.querySelector(`button`).addEventListener(`click`, (event) => {
+//   event.preventDefault();
+//   const itemsLi = [...document.querySelectorAll(`li`)];
+//   const maxItem = itemsLi.reduce((max, min) =>
+//     Number(max.textContent) > Number(min.textContent) ? max : min,
+//   );
+//   maxItem.remove();
+// });
